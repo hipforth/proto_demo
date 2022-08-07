@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package proto;
+
+import "grid_2d.proto";
+import "transform.proto";
+
+// Serialized state of a Submap2D.
+message Submap2D {
+  int32 num_range_data = 1;
+  bool is_finished = 2;
+  Grid2D grid = 3;
+}

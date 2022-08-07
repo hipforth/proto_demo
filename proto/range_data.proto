@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package proto;
+
+import "transform.proto";
+
+message RangeData {
+  repeated int32 point_x = 1;
+  repeated int32 point_y = 2;
+  Rigid3d pose = 3;
+  int32 submapID = 4;
+}

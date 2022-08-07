@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+import "cell_limits_2d.proto";
+import "transform.proto";
+
+package proto;
+
+message MapLimits {
+  double resolution = 1;
+  CellLimits cell_limits = 3;
+}
+
